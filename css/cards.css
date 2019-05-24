@@ -1,0 +1,54 @@
+.myCard,#bottom a {
+    min-height: 450px;
+    width: 100%;
+
+    margin: 16px;
+    border-radius: 8px;
+
+    color: #707070;
+    background-color: white;
+}
+
+#bottom a:link,
+ #bottom a:visited,
+  #bottom a:hover,
+   #bottom a:active {
+    text-decoration: none !important;
+}
+
+.innerCard {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
+.img .innerCard {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.img h2, .img h4 {
+    
+    color: white;
+    text-shadow: 4px 5px 12px #000000
+}
+
+.img h2 {
+    line-height: 0.7;
+}
+
+.img:hover .innerCard {
+    visibility: visible;
+}
+
+#india.myCard, a#india {
+    background-image: url(../res/imgs/cards/india2019/IMG_5840.jpg);
+}

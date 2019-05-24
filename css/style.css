@@ -26,6 +26,11 @@ h1 {
         width: 3vw;
     }
 
+    .myCard,#bottom a {
+        min-width: 300px;
+        max-width: 345px;
+    }
+
     #top {
         height: 55%;
     }
@@ -49,6 +54,31 @@ h1 {
         width: 9vw;
     }
 
+    .img .innerCard {
+        visibility: visible !important;
+        position: relative !important;
+        margin-top: 16px !important;
+    }
+
+    .img .innerCard h4 {
+        visibility: hidden;
+    }
+
+    @media (min-width: 767px ) {
+        .myCard,#bottom a {
+            min-width: 220px;
+            max-width: 45%;
+        }
+    }
+    @media (max-width: 767px ) {
+        .myCard,#bottom a {
+            min-width: 300px;
+            max-width: 100%;
+        }
+    }
+
+    
+
     #top {
         height: 50%;
     }
@@ -59,6 +89,9 @@ h1 {
 }
 
 h2 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    
     color: #162C9B;
 }
 
@@ -68,11 +101,40 @@ h3 {
     margin-left: 8px !important;
 }
 
+h4 {
+    margin: 8px !important;
+    font-size: 2rem;
+    font-weight: 600 !important;
+    color: white;
+}
+
 
 #bottom {
     
     background-color: #26A7FF;
+    height: max-content;
     color: #fff;
+}
+
+#tri {
+    width: 0; 
+    height: 0; 
+
+    border-left: 0px solid transparent; 
+    border-right: 100vw solid transparent; 
+    border-bottom: 4vh solid #26A7FF;
+}
+
+#tri::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+
+    width: 0; 
+    height: 0; 
+    border-left: 100vw solid transparent; 
+    border-right: 0px solid transparent; 
+    border-bottom: 4vh solid #162C9B;
 }
 
 .center-childs {
@@ -82,14 +144,12 @@ h3 {
 }
 
 .btn-shadow {
-    
     margin: 8px;
     padding: 0px !important;
+}
+
+.std-shadow {
     -webkit-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.16);
     -moz-box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.16);
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.16);
-}
-
-.w-50 {
-    width: 50%;
 }
